@@ -12,6 +12,7 @@ import com.example.ProVaciNation.DTO.Response.PatientResponse;
 import com.example.ProVaciNation.Enum.Gender;
 import com.example.ProVaciNation.exception.PatientNotFoundException;
 import com.example.ProVaciNation.model.Patient;
+import com.example.ProVaciNation.repository.DoctorRepository;
 import com.example.ProVaciNation.repository.PatientRepository;
 
 @Service
@@ -19,6 +20,7 @@ public class PatientService {
 
     @Autowired
     PatientRepository patientRepository;
+    DoctorRepository doctorRepository;
 
     public PatientResponse addPatient(PatientRequest patientRequest) {
 
@@ -77,6 +79,4 @@ public class PatientService {
 
         return patientList;
     }
-
-
 }

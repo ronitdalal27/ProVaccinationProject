@@ -47,7 +47,4 @@ public class PatientConroller {
     public List<PatientResponse> getSpecificGenderPatients(@PathVariable("gender") Gender gender){
         return patientService.getSpecificGenderPatients(gender);
     }
-
-
-    
 }

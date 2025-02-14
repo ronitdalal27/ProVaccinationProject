@@ -41,5 +41,4 @@ public class Dose {
     @OneToOne //represents dose to patient one-to-one relationship
     @JoinColumn //creates the foreign key -> id of patient table
     Patient patient;
-    
 }
